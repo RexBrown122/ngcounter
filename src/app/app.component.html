@@ -1,3 +1,9 @@
 <div class="container text-center">
   <h1>{{ title }}</h1>
+  <button class="create-button">Create</button>
+  <div class="counter-module">
+    <button (click)="decrement()" class="left-button">-</button>
+    <label class="count-label">{{ count }}</label>
+    <button (click)="increment()" class="right-button">+</button>
+  </div>
 </div>

@@ -28,4 +28,16 @@ describe('AppComponent', () => {
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('h1').textContent).toContain('Angular Counter');
   });
+
+  it('should render a counter on HTML page', () => {
+    const app = TestBed.createComponent(AppComponent);
+    const fixture = app.nativeElement;
+    expect(fixture.querySelector(".left-button")).toBeDefined();
+    expect(fixture.querySelector(".right-button")).toBeDefined();
+    expect(fixture.querySelector(".count-label")).toBeDefined();
+  });
+
+  it('should create new counters when you press the Create button', () => {
+    
+  });
 });
