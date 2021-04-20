@@ -9,7 +9,7 @@ import {Counter} from '../counter';
 export class CounterComponent implements OnInit {
 
   @Input() public counter: Counter;
-  private _myCounter: Counter;
+  public _myCounter: Counter;
 
   constructor() { }
 
