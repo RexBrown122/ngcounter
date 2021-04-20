@@ -31,7 +31,9 @@ export class CounterComponent implements OnInit {
   }
 
   decrement() {
-    this._myCounter.count--;
+    if (this._myCounter.count > 0) {
+      this._myCounter.count--;
+    }
   }
 
 }

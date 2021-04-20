@@ -1,0 +1,27 @@
+button {
+    height: 50px;
+    width: 50px;
+    border-radius: 12px;
+}
+
+.left-button {
+    margin-right: 15%;
+    background-color: red;
+}
+
+.right-button {
+    margin-left: 15%;
+    background-color: green;
+}
+
+.countLabel {
+    margin-left: fill;
+    margin-right: fill;
+}
+
+.counter-module {
+    width: 200px;
+    border: solid;
+    border-radius: 16px;
+    margin: 0%;
+}

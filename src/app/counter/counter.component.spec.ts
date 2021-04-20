@@ -34,6 +34,12 @@ describe('CounterComponent', () => {
     component.increment();
     expect(component.myCounter.count).toEqual(1);
     component.decrement();
-    expect(component.myCounter.count).toEqual(0);
+    expect(component.myCounter.count).toEqual(0); 
   });
+
+  it('should not decrement count below 0', () => {
+    expect(component.myCounter.count).toEqual(0); 
+    component.decrement();
+    expect(component.myCounter.count).toEqual(0); 
+  })
 });

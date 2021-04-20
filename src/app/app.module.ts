@@ -5,12 +5,14 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { CounterComponent } from './counter/counter.component';
 import { CounterListComponent } from './counter-list/counter-list.component';
+import { SuperCounterComponent } from './super-counter/super-counter.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CounterComponent,
-    CounterListComponent
+    CounterListComponent,
+    SuperCounterComponent
   ],
   imports: [
     BrowserModule,
