@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { CounterComponent} from './counter/counter.component';
+import { CounterListComponent} from './counter-list/counter-list.component';
 
 @Component({
   selector: 'app-root',
@@ -7,13 +9,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular Counter';
-  count = 0;
-
-  increment() {
-    this.count++;
-  }
-
-  decrement() {
-    this.count--;
-  }
+  counter = new CounterComponent();
 }
