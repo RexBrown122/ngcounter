@@ -47,6 +47,16 @@ describe('CounterListComponent', () => {
     expect(component.superCounterList.length).toEqual(1);
   });
 
+  it('should correctly take sum of existing Counters to create new SuperCounter', () => {
+    component.pushNewItem(new Counter(100));
+    component.pushNewItem(new Counter(50));
+    component.pushNewItem(new Counter(150));
+    component.pushNewItem(new Counter(200));
+    component.pushNewItem(new Counter(50));
+    component.pushNewItem();
+    expect(component.superCounterList[0].count).toEqual(550);
+  })
+
   it('should replace 2 super counters and 5 counters with a super duper counter when pressing the Create button', () => {
     for (let i:number = 0; i < 18; i++) {
       component.pushNewItem();

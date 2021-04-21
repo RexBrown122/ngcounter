@@ -25,10 +25,15 @@ export class CounterListComponent implements OnInit {
     this.colossalCounterList = [];
   }
 
-  pushNewItem() {
+  pushNewItem(item?: Counter) {
     let sum: number = 0;
     if (this.counterList.length < 5) {
-      this.counterList.push(new Counter());
+      if (item) {
+        this.counterList.push(item);
+      }
+      else {
+        this.counterList.push(new Counter());
+      }
     }
     else {
       while (this.counterList.length > 0) {

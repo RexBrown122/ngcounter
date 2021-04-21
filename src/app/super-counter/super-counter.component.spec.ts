@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { CounterComponent } from '../counter/counter.component';
 
 import { SuperCounterComponent } from './super-counter.component';
 
@@ -39,5 +40,14 @@ describe('SuperCounterComponent', () => {
     expect(component.myCounter.count).toEqual(0);
     component.decrement();
     expect(component.myCounter.count).toEqual(0);
+  });
+
+  it('should correctly add up the counter values of Counters when making a SuperCounter', () => {
+    let cList = TestBed.createComponent(CounterComponent);
+    let sCounter = fixture.debugElement.nativeElement;
+    let cCounter = cList.debugElement.nativeElement;
+    cCounter.querySelector('.counter-module');
+    sCounter.querySelector('.super-counter-module');
+    expect(cCounter.classList != sCounter.classList).toBeTruthy();
   });
 });
