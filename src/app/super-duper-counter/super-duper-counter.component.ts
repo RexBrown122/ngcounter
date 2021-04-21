@@ -24,6 +24,6 @@ export class SuperDuperCounterComponent extends CounterComponent implements OnIn
       if (this._myCounter.count % 20 === 0) {
         this.makeNew.emit();
       }
-    },100);
+    },1000);
   }
 }

@@ -53,4 +53,11 @@ describe('CounterListComponent', () => {
     }
     expect(component.superDuperCounterList.length).toEqual(1);
   });
+
+  it('should replace 3 super duper counters with a colossal counter', () => {
+    for (let i:number = 0; i < 54; i++) {
+      component.pushNewItem();
+    }
+    expect(component.colossalCounterList.length).toEqual(1);
+  })
 });

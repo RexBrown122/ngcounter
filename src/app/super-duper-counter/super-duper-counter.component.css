@@ -1,15 +1,23 @@
 .super-duper-counter-module {
-    width: 800px;
+    width: 600px;
     height: 55px;
-    border: solid;
-    border-radius: 16px;
+    border: inset;
+    border-color: rgb(229, 215, 130);;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    background-color: rgb(98, 226, 94);
+    background-color: rgb(212, 198, 118);
 }
 .start-button {
-    background-color: lightblue;
+    background-color: rgb(226, 168, 41);
+}
+
+.start-button:hover {
+    background-color: rgb(255, 189, 47);
+}
+
+.start-button:disabled {
+    background-color: gray;
 }
 
 .fill {

@@ -1,0 +1,29 @@
+.create-button {
+    border: none;
+    background-color: rgb(199, 199, 199);
+    font-size: 200%;
+    outline: none;
+    position:relative;
+    margin-right:100%
+}
+
+.counter-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    height: 110px;
+}
+
+.c1 {
+    background-color: rgb(118, 198, 212);
+}
+.c2 {
+    background-color: rgb(118, 212, 141);
+}
+.c3 {
+    background-color: rgb(212, 198, 118);
+}
+.c4 {
+    background-color: rgb(212, 118, 173);
+}

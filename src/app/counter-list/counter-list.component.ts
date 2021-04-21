@@ -12,6 +12,8 @@ export class CounterListComponent implements OnInit {
   public counterList: Counter[];
   public superCounterList: Counter[];
   public superDuperCounterList: Counter[];
+  public colossalCounterList: Counter[];
+
 
   constructor() {
   }
@@ -20,6 +22,7 @@ export class CounterListComponent implements OnInit {
     this.counterList = [];
     this.superCounterList = [];
     this.superDuperCounterList = [];
+    this.colossalCounterList = [];
   }
 
   pushNewItem() {
@@ -40,6 +43,13 @@ export class CounterListComponent implements OnInit {
       } 
       this.pushSuperDuperItem(new Counter(sum));
     }
+    if (this.superDuperCounterList.length >= 3) {
+      sum = 0;
+      while (this.superDuperCounterList.length > 0) {
+        sum += this.superDuperCounterList.pop().count;
+      } 
+      this.pushColossalItem(new Counter(sum));
+    }
   }
 
   pushSuperItem(item: Counter) {
@@ -48,5 +58,9 @@ export class CounterListComponent implements OnInit {
 
   pushSuperDuperItem(item: Counter) {
     this.superDuperCounterList.push(item);
+  }
+
+  pushColossalItem(item: Counter) {
+    this.colossalCounterList.push(item);
   }
 }

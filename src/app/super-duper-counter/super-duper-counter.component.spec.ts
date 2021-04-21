@@ -31,5 +31,7 @@ describe('SuperDuperCounterComponent', () => {
     }, 600);
   });
 
-  //it('should send a signal when the counter reaches a multiple of 20');
+  it('should send a signal when the counter reaches a multiple of 20', () => {
+    
+  });
 });
