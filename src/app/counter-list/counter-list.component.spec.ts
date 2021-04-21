@@ -27,7 +27,7 @@ describe('CounterListComponent', () => {
     expect(component.counterList.length).toEqual(0);
   });
 
-  it('should create new counters when you press the Create button', () => {
+  it('should be able to create new Counters', () => {
     component.pushNewItem();
     expect(component.counterList.length).toEqual(1);
   });
@@ -37,7 +37,7 @@ describe('CounterListComponent', () => {
     expect(button).toBeDefined();
   });
 
-  it('should replace 5 recent counters with a super counter', () => {
+  it('should replace 5 recent counters with a super counter when pressing the Create button', () => {
     component.pushNewItem();
     component.pushNewItem();
     component.pushNewItem();
@@ -45,5 +45,12 @@ describe('CounterListComponent', () => {
     component.pushNewItem();
     component.pushNewItem();
     expect(component.superCounterList.length).toEqual(1);
+  });
+
+  it('should replace 2 super counters and 5 counters with a super duper counter when pressing the Create button', () => {
+    for (let i:number = 0; i < 18; i++) {
+      component.pushNewItem();
+    }
+    expect(component.superDuperCounterList.length).toEqual(1);
   });
 });

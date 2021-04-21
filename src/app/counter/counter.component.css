@@ -5,23 +5,25 @@ button {
 }
 
 .left-button {
-    margin-right: 15%;
     background-color: red;
 }
 
 .right-button {
-    margin-left: 15%;
     background-color: green;
 }
 
-.countLabel {
-    margin-left: fill;
-    margin-right: fill;
+.count-label {
+    margin: 0 auto;
+    font-size: 175%;
 }
 
 .counter-module {
     width: 200px;
+    height: 55px;
     border: solid;
     border-radius: 16px;
-    margin: 0%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

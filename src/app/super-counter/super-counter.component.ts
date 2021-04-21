@@ -13,8 +13,6 @@ export class SuperCounterComponent extends CounterComponent implements OnInit {
     super();
   }
 
-  // ngOnInit(): void {
-  // }
   increment() {
     this._myCounter.count += 3;
   }

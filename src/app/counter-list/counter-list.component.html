@@ -1,6 +1,9 @@
 <button (click)="pushNewItem()" class="create-button">Create</button>
 <app-counter *ngFor="let counter of counterList" [counter]="counter">
 </app-counter>
-<app-super-counter *ngFor="let sCounter of superCounterList" [counter]="sCounter">
 
+<app-super-counter *ngFor="let sCounter of superCounterList" [counter]="sCounter">
 </app-super-counter>
+
+<app-super-duper-counter (makeNew)="pushNewItem()" *ngFor="let sDCounter of superDuperCounterList" [counter]="sDCounter">
+</app-super-duper-counter>

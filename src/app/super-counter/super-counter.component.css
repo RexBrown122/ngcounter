@@ -1,6 +1,9 @@
 .super-counter-module {
     width: 400px;
+    height: 55px;
     border: solid;
     border-radius: 16px;
-    margin: 0%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
 }
